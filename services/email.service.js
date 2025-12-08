@@ -9,7 +9,7 @@ const sendEmail = async (data) => {
         // from: process.env.EMAIL,
         to: process.env.EMAIL,
         subject: 'New message from contact form',
-        text: `Name: ${name}\nEmail: ${email}\n Contact Number: ${number} \n Course to Buy: ${course}`
+        text: `Name: ${name}\nEmail: ${email}\nContact Number: ${number} \nCourse to Buy: ${course}`
     };
 
     return transporter.sendMail(mailOptions);
